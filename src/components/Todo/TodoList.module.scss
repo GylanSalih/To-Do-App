@@ -1,0 +1,195 @@
+// TodoList Styles - Modern Design System
+.todoList {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.emptyState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 2rem;
+  text-align: center;
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+}
+
+.emptyIcon {
+  color: var(--color-muted-foreground);
+  margin-bottom: 1rem;
+  opacity: 0.5;
+}
+
+.emptyTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--color-foreground);
+  margin-bottom: 0.5rem;
+}
+
+.emptyDescription {
+  font-size: 1rem;
+  color: var(--color-muted-foreground);
+  max-width: 400px;
+  line-height: 1.5;
+}
+
+.bulkActions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background: var(--color-primary);
+  color: var(--color-primary-foreground);
+  border-radius: 0.75rem;
+  margin-bottom: 0.5rem;
+  animation: slideDown 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+  @media (max-width: 640px) {
+    flex-direction: column;
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+}
+
+.bulkInfo {
+  font-weight: 500;
+  font-size: 0.875rem;
+}
+
+.bulkButtons {
+  display: flex;
+  gap: 0.5rem;
+
+  @media (max-width: 640px) {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  @media (max-width: 480px) {
+    flex-direction: column;
+    gap: 0.375rem;
+  }
+}
+
+.bulkButton {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.375rem;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--color-primary-foreground);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: rgba(255, 255, 255, 0.3);
+  }
+
+  &.danger {
+    background: rgba(239, 68, 68, 0.8);
+    border-color: rgba(239, 68, 68, 0.9);
+
+    &:hover {
+      background: rgba(239, 68, 68, 0.9);
+    }
+  }
+
+  @media (max-width: 480px) {
+    justify-content: center;
+  }
+}
+
+.listHeader {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 1rem 1.5rem;
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: 0.75rem 0.75rem 0 0;
+  border-bottom: none;
+}
+
+.selectAllButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: transparent;
+  color: var(--color-muted-foreground);
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    color: var(--color-foreground);
+    background: var(--color-muted);
+  }
+}
+
+.listTitle {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-muted-foreground);
+}
+
+.listContainer {
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: 0 0 0.75rem 0.75rem;
+  overflow: hidden;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &.draggingOver {
+    background: var(--color-accent);
+    border-color: var(--color-primary);
+    box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.1);
+  }
+}
+
+// Animations
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+// Responsive Design
+@media (max-width: 640px) {
+  .todoList {
+    gap: 0.75rem;
+  }
+
+  .emptyState {
+    padding: 3rem 1.5rem;
+  }
+
+  .emptyTitle {
+    font-size: 1.25rem;
+  }
+
+  .emptyDescription {
+    font-size: 0.875rem;
+  }
+
+  .listHeader {
+    padding: 0.75rem 1rem;
+  }
+}

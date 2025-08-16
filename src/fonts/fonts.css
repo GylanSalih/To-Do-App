@@ -1,0 +1,46 @@
+/*-----------------------------------------------------------*/
+/* Fonts CSS */
+/*-----------------------------------------------------------*/
+
+/* Alle Fonts Lokal eingebunden */
+
+/* -------------------Arvo Font START--------------------------*/
+
+
+@font-face {
+  font-family: "ArvoBold";
+  src: url("/src/fonts/Arvo/Arvo-Bold.ttf") format("truetype");
+  font-weight: 500; 
+  font-style: bold;
+}
+
+@font-face {
+  font-family: "ArvoBoldItalic";
+  src: url("/src/fonts/Arvo/Arvo-BoldItalic.ttf") format("truetype");
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ArvoItalic";
+  src: url("/src/fonts/Arvo/Arvo-Italic.ttf") format("truetype");
+  font-weight: 400; 
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ArvoRegular";
+  src: url("/src/fonts/Arvo/Arvo-Bold.ttf") format("truetype");
+  font-weight: 400; 
+  font-style: normal;
+}
+
+
+/* -------------------Source Sans Pro Font START--------------------------*/
+
+@font-face {
+  font-family: "SourceSanRegular";
+  src: url("/src/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400; 
+  font-style: normal;
+}

@@ -1,0 +1,383 @@
+// TodoForm Styles - Modern Design System
+.form {
+  background: var(--color-card);
+  border: 1px solid var(--color-border);
+  border-radius: 1rem;
+  overflow: hidden;
+  transition: all 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+
+  &:hover {
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+    border-color: var(--color-muted-foreground);
+  }
+
+  &:focus-within {
+    border-color: var(--color-primary);
+    box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  }
+}
+
+.mainInput {
+  padding: 1.5rem;
+}
+
+.inputGroup {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.inputIcon {
+  color: var(--color-muted-foreground);
+  flex-shrink: 0;
+}
+
+.titleInput {
+  flex: 1;
+  font-size: 1.125rem;
+  font-weight: 500;
+  color: var(--color-foreground);
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0.75rem 0.5rem 0.75rem 0.5rem;
+
+  &::placeholder {
+    color: var(--color-muted-foreground);
+    font-weight: 400;
+  }
+
+  &:focus::placeholder {
+    opacity: 0.5;
+  }
+}
+
+.addButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: var(--color-primary);
+  color: var(--color-primary-foreground);
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  flex-shrink: 0;
+
+  &:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px -2px rgb(0 0 0 / 0.1);
+  }
+
+  &:active:not(:disabled) {
+    transform: translateY(0) scale(0.95);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-background), 0 0 0 4px var(--color-primary);
+  }
+}
+
+.expandedForm {
+  border-top: 1px solid var(--color-border);
+  padding: 1.5rem;
+  background: var(--color-accent);
+  animation: slideDown 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.descriptionSection {
+  .inputGroup {
+    align-items: flex-start;
+    padding-top: 0.25rem;
+  }
+}
+
+.descriptionInput {
+  flex: 1;
+  font-size: 0.875rem;
+  color: var(--color-foreground);
+  background: var(--color-input);
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  resize: vertical;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-family: inherit;
+
+  &::placeholder {
+    color: var(--color-muted-foreground);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.formRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+
+  @media (max-width: 640px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.select {
+  flex: 1;
+  font-size: 0.875rem;
+  color: var(--color-foreground);
+  background: var(--color-input);
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    border-color: var(--color-muted-foreground);
+  }
+}
+
+.dateInput {
+  flex: 1;
+  font-size: 0.875rem;
+  color: var(--color-foreground);
+  background: var(--color-input);
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    border-color: var(--color-muted-foreground);
+  }
+}
+
+.tagInput {
+  flex: 1;
+  font-size: 0.875rem;
+  color: var(--color-foreground);
+  background: var(--color-input);
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &::placeholder {
+    color: var(--color-muted-foreground);
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    border-color: var(--color-muted-foreground);
+  }
+}
+
+.tagAddButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.75rem;
+  height: 1.75rem;
+  background: var(--color-primary);
+  color: var(--color-primary-foreground);
+  border: none;
+  border-radius: 0.375rem;
+  cursor: pointer;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  flex-shrink: 0;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+
+  &:active {
+    transform: scale(0.95);
+  }
+}
+
+.tagsDisplay {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.5rem 0;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  background: var(--color-primary);
+  color: var(--color-primary-foreground);
+  font-size: 0.75rem;
+  font-weight: 500;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.375rem;
+  animation: scaleIn 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.tagRemove {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1rem;
+  height: 1rem;
+  background: rgba(255, 255, 255, 0.2);
+  color: inherit;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+  }
+
+  &:active {
+    transform: scale(0.9);
+  }
+}
+
+.formActions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.75rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--color-border);
+  margin-top: 0.5rem;
+}
+
+.cancelButton {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-muted-foreground);
+  background: transparent;
+  border: 1px solid var(--color-border);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background: var(--color-muted);
+    border-color: var(--color-muted-foreground);
+    color: var(--color-foreground);
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-background), 0 0 0 4px var(--color-foreground);
+  }
+}
+
+.submitButton {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--color-primary-foreground);
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 200ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover:not(:disabled) {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px -2px rgb(0 0 0 / 0.1);
+  }
+
+  &:active:not(:disabled) {
+    transform: translateY(0) scale(0.95);
+  }
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+    transform: none;
+  }
+
+  &:focus-visible {
+    outline: none;
+    box-shadow: 0 0 0 2px var(--color-background), 0 0 0 4px var(--color-primary);
+  }
+}
+
+// Animations
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 400px;
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+// Responsive Design
+@media (max-width: 640px) {
+  .form {
+    border-radius: 0.75rem;
+  }
+
+  .mainInput,
+  .expandedForm {
+    padding: 1rem;
+  }
+
+  .titleInput {
+    font-size: 1rem;
+  }
+
+  .formActions {
+    flex-direction: column;
+    align-items: stretch;
+
+    .cancelButton,
+    .submitButton {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+}

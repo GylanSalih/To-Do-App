@@ -1,0 +1,132 @@
+// TodoApp Styles - Modern Design System
+.todoApp {
+  min-height: 100vh;
+  background: var(--color-background);
+  padding: 2rem 1rem;
+  animation: fadeIn 0.6s cubic-bezier(0, 0, 0.2, 1);
+
+  // Background pattern overlay
+  &::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: 
+      radial-gradient(circle at 25% 25%, rgba(245, 245, 245, 0.3) 0%, transparent 50%),
+      radial-gradient(circle at 75% 75%, rgba(245, 245, 245, 0.3) 0%, transparent 50%);
+    pointer-events: none;
+    z-index: -1;
+    opacity: 0.1;
+  }
+
+  @media (max-width: 768px) {
+    padding: 1rem 0.5rem;
+  }
+}
+
+.loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 60vh;
+  gap: 1rem;
+  color: var(--color-muted-foreground);
+
+  .spinner {
+    animation: spin 1s linear infinite;
+    color: var(--color-primary);
+  }
+
+  p {
+    font-size: 1.125rem;
+    font-weight: 500;
+  }
+}
+
+.container {
+  max-width: 56rem; // 896px
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  @media (max-width: 768px) {
+    gap: 1.5rem;
+  }
+}
+
+.statsSection {
+  animation: slideDown 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.formSection {
+  animation: fadeInUp 0.6s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.filtersSection {
+  animation: fadeInUp 0.6s cubic-bezier(0, 0, 0.2, 1) 0.1s both;
+}
+
+.listSection {
+  animation: fadeInUp 0.6s cubic-bezier(0, 0, 0.2, 1) 0.2s both;
+}
+
+// Animations
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+    max-height: 200px;
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+// Responsive Design
+@media (max-width: 640px) {
+  .container {
+    max-width: 100%;
+    padding: 0 0.5rem;
+  }
+}

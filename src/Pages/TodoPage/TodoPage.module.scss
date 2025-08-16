@@ -1,0 +1,20 @@
+// TodoPage Styles - Modern Design System
+.todoPage {
+  min-height: 100vh;
+  padding-top: 5rem; // Account for header
+  animation: fadeIn 0.6s cubic-bezier(0, 0, 0.2, 1);
+
+  @media (max-width: 768px) {
+    padding-top: 4rem;
+  }
+}
+
+// Animation
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
