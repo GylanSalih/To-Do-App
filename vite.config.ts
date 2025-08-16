@@ -14,7 +14,7 @@ export default defineConfig({
     open: true,
   },
   build: {
-    outDir: 'dist-react',
+    outDir: 'dist',
     sourcemap: true,
   },
   css: {
