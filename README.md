@@ -28,8 +28,8 @@
 <br />
 <div align="center">
   <a href="https://github.com/GylanSalih/To-Do-App">
-    <img src="docs/images/16.08.2025_home.png" alt="Todo App Preview" width="400" style="margin-right: 10px;">
-    <img src="docs/images/16.08.2025_home2.png" alt="Todo App Preview 2" width="400" style="margin-left: 10px;">
+    <img src="docs/images/16.08.2025_home.png?v=2" alt="Todo App Preview" width="400" style="margin-right: 10px;">
+    <img src="docs/images/16.08.2025_home2.png?v=2" alt="Todo App Preview 2" width="400" style="margin-left: 10px;">
   </a>
 
 <h3 align="center">
