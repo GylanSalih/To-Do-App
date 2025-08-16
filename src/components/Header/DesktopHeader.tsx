@@ -50,7 +50,7 @@ const DesktopHeader: React.FC = () => {
             width={32}
             height={32}
           />
-          <span>PetalStack</span>
+          <span>Todo App</span>
         </Link>
 
         {/* Desktop Navigation */}
