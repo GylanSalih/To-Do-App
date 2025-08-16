@@ -11,29 +11,29 @@
 </div>
 
 <!-- Badges Shields -->
-[contributors-shield]: https://custom-icon-badges.demolab.com/github/contributors/GylanSalih/PetalStack?color=FF0000&logo=group&label=Contributors&logoColor=white&style=for-the-badge&labelColor=000000
-[forks-shield]: https://custom-icon-badges.demolab.com/github/forks/GylanSalih/PetalStack?color=FF0000&logo=repo-forked&label=Forks&logoColor=white&style=for-the-badge&labelColor=000000
-[stars-shield]: https://custom-icon-badges.demolab.com/github/stars/GylanSalih/PetalStack?color=FF0000&label=Stars&style=for-the-badge&logo=star&logoColor=white&labelColor=000000
-[issues-shield]: https://custom-icon-badges.demolab.com/github/issues/GylanSalih/PetalStack?color=FF0000&logo=issue-opened&label=Issues&logoColor=white&labelColor=000000&style=for-the-badge
-[license-shield]: https://custom-icon-badges.demolab.com/github/license/GylanSalih/PetalStack?color=FF0000&logo=law&label=License&logoColor=white&style=for-the-badge&labelColor=000000
+[contributors-shield]: https://custom-icon-badges.demolab.com/github/contributors/GylanSalih/To-Do-App?color=FF0000&logo=group&label=Contributors&logoColor=white&style=for-the-badge&labelColor=000000
+[forks-shield]: https://custom-icon-badges.demolab.com/github/forks/GylanSalih/To-Do-App?color=FF0000&logo=repo-forked&label=Forks&logoColor=white&style=for-the-badge&labelColor=000000
+[stars-shield]: https://custom-icon-badges.demolab.com/github/stars/GylanSalih/To-Do-App?color=FF0000&label=Stars&style=for-the-badge&logo=star&logoColor=white&labelColor=000000
+[issues-shield]: https://custom-icon-badges.demolab.com/github/issues/GylanSalih/To-Do-App?color=FF0000&logo=issue-opened&label=Issues&logoColor=white&labelColor=000000&style=for-the-badge
+[license-shield]: https://custom-icon-badges.demolab.com/github/license/GylanSalih/To-Do-App?color=FF0000&logo=law&label=License&logoColor=white&style=for-the-badge&labelColor=000000
 
 <!-- Badges Links -->
-[contributors-url]: https://github.com/GylanSalih/PetalStack/graphs/contributors
-[forks-url]: https://github.com/GylanSalih/PetalStack/network/members
-[stars-url]: https://github.com/GylanSalih/PetalStack/stargazers
-[issues-url]: https://github.com/GylanSalih/PetalStack/issues
-[license-url]: https://github.com/GylanSalih/PetalStack/blob/main/LICENSE
+[contributors-url]: https://github.com/GylanSalih/To-Do-App/graphs/contributors
+[forks-url]: https://github.com/GylanSalih/To-Do-App/network/members
+[stars-url]: https://github.com/GylanSalih/To-Do-App/stargazers
+[issues-url]: https://github.com/GylanSalih/To-Do-App/issues
+[license-url]: https://github.com/GylanSalih/To-Do-App/blob/main/LICENSE
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/GylanSalih/PetalStack">
-    <img src="docs/images/16.08.25_home.png" alt="PetalStack Preview" width="400" style="margin-right: 10px;">
-    <img src="docs/images/16.08.25_home2.png" alt="PetalStack Preview 2" width="400" style="margin-left: 10px;">
+  <a href="https://github.com/GylanSalih/To-Do-App">
+    <img src="docs/images/16.08.2025_home.png" alt="Todo App Preview" width="400" style="margin-right: 10px;">
+    <img src="docs/images/16.08.2025_home2.png" alt="Todo App Preview 2" width="400" style="margin-left: 10px;">
   </a>
 
 <h3 align="center">
- <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Smiling%20Cat%20with%20Heart-Eyes.png" alt="Smiling Cat with Heart-Eyes" width="25" height="25" /> PetalStack - React TypeScript SASS Boilerplate
+ <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Smiling%20Cat%20with%20Heart-Eyes.png" alt="Smiling Cat with Heart-Eyes" width="25" height="25" /> To-Do App - Modern Task Management
 </h3>
 
 <p align="center">
@@ -45,9 +45,9 @@
     <br />
     <a href="#demo">View Demo</a>
     ·
-    <a href="https://github.com/GylanSalih/PetalStack/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/GylanSalih/To-Do-App/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
-    <a href="https://github.com/GylanSalih/PetalStack/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/GylanSalih/To-Do-App/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
 </p>
 </div>
 
@@ -70,7 +70,7 @@
 <span>
   <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Robot.png" alt="Robot" width="25" height="25" />
   <img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Smilies/Red%20Heart.png" alt="Red Heart" width="25" height="25" />
-Mission: Modern React TypeScript SASS Boilerplate. Crafted with passion for the #OpenSource community. Free to use and customize. Production-ready starting template that helps developers jump-start their projects quickly!
+Mission: Modern Todo Application built with React TypeScript and SASS. Crafted with passion for productive task management. Free to use and customize. Features dark/light mode, responsive design, and intuitive user experience!
 
 &nbsp;  <!-- Leerraum zwischen den Abschnitten -->
 
@@ -82,12 +82,13 @@ Mission: Modern React TypeScript SASS Boilerplate. Crafted with passion for the 
 - **SASS/SCSS** with CSS Modules for component-scoped styling
 - **Vite** for lightning-fast development and optimized builds
 
-### 🛠️ Development Experience
-- **Hot Module Replacement** for instant feedback during development
-- **Path Aliases** (`@/*` for `src/*`) for cleaner imports
-- **ESLint + Prettier** for consistent code quality
-- **Jest** testing framework with TypeScript support
-- **Source Maps** for enhanced debugging
+### ✅ Todo Features
+- **Add/Edit/Delete Tasks** with intuitive user interface
+- **Mark Tasks Complete** with visual feedback
+- **Filter Tasks** by status (All, Active, Completed)
+- **Task Statistics** showing progress and completion rates
+- **Local Storage** for persistent task data
+- **Real-time Updates** with instant UI feedback
 
 ### 🎨 UI & UX
 - **Dark/Light Mode** with system preference detection
@@ -98,7 +99,7 @@ Mission: Modern React TypeScript SASS Boilerplate. Crafted with passion for the 
 
 ### 📁 Architecture
 - **Component-Based** structure with SASS modules
-- **Context API** for state management (Dark Mode)
+- **Context API** for state management (Todos & Dark Mode)
 - **React Router** for client-side navigation
 - **Modular SASS** with variables and mixins
 
@@ -144,10 +145,10 @@ To clone and run this application, you'll need <a href="https://git-scm.com">Git
 
 <ol>
   <li><strong>Clone the repository:</strong>
-    <pre><code>git clone https://github.com/GylanSalih/PetalStack.git</code></pre>
+    <pre><code>git clone https://github.com/GylanSalih/To-Do-App.git</code></pre>
   </li>
   <li><strong>Navigate into the repository:</strong>
-    <pre><code>cd PetalStack</code></pre>
+    <pre><code>cd To-Do-App</code></pre>
   </li>
   <li><strong>Install dependencies:</strong>
     <pre><code>npm install</code></pre>
@@ -180,7 +181,7 @@ To clone and run this application, you'll need <a href="https://git-scm.com">Git
 
 ## <span style="display: inline-flex; align-items: center;"><img src="https://raw.githubusercontent.com/Tarikul-Islam-Anik/Animated-Fluent-Emojis/master/Emojis/Objects/Pushpin.png" alt="Pushpin" width="25" height="25" /> Contributing</span>
 
-We welcome contributions to **PetalStack**! 🎉 Whether it's fixing bugs, improving documentation, or adding new features, your help is always appreciated.
+We welcome contributions to **To-Do-App**! 🎉 Whether it's fixing bugs, improving documentation, or adding new features, your help is always appreciated.
 
 ### How to Contribute
 
